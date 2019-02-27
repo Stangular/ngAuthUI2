@@ -1,0 +1,16 @@
+<mat-form-field class="login-full-width" floatlabel="never">
+     <div class="authform" style="display:inline-block; width:60px; margin-right:10px">
+       <label>{{label}}</label>
+     </div>
+     <input type="fieldType"
+            matInput value=""
+            formControlName=fieldName
+            [errorStateMatcher]="matcher" />
+     <mat-hint>someone@somewhere.com</mat-hint>
+     <mat-error *ngIf="control(fieldName)?.hasError('email')">
+       Please enter a valid email address
+     </mat-error>
+     <mat-error *ngIf="control(fieldName)?.hasError('required')">
+       {{label}} is <strong>required</strong>
+     </mat-error>
+   </mat-form-field>

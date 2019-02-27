@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~material-design-icons/iconfont/material-icons.css';
+
+body {
+  display: block;
+  margin: 0px;
+}
+
+nav {
+  margin-top: 16px;
+}
+
+  nav a {
+    background-color: #00838F;
+    color: white;
+    padding: 8px 16px;
+    margin: 8px;
+    vertical-align: middle;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+.authform {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+}
+
+/*@media screen and (max-width: 640) {
+  .view-header {
+    font-family: Verdana;
+    color: rebeccapurple;
+    text-align: center;
+    display: inline-block;
+  }
+}*/
+
+
+
+.view-header {
+  font-family: Verdana;
+  color: blue;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  .view-header {
+    display:inline-block;
+  }
+}
+/*@media (max-width: 9007px) {
+  .view-header {
+    font-family: Verdana;
+    color: blue;
+    background-color: green;
+    text-align: center;
+  }
+}*/
+@media (max-width: 1007px) {
+  .view-header {
+    display: inline-block;
+  }
+}
+@media (max-width: 640px) {
+  .view-header {
+    display: inline-block;
+  }
+
+    .view-header a {
+      background-color: palegoldenrod;
+    }
+}
+/*@media screen and (min-device-width: 1008px) {
+  .view-header {
+    font-family: Verdana;
+    color: blue;
+    background-color: red;
+    text-align: center;
+  }
+}*/

@@ -1,0 +1,9 @@
+
+<mat-grid-list cols="1" rowHeight="800px">
+  <mat-grid-tile *ngFor="let c of Columns; index as i"
+                 [colspan]="c.ColSpan"
+                 [rowspan]="c.RowSpan"
+                 [style.background]="c.Color">
+    <ng-content select="c.contentName"></ng-content>
+  </mat-grid-tile>
+</mat-grid-list>
