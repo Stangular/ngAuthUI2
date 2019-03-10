@@ -103,9 +103,9 @@ export class LayoutManager {
     pattern.AddTile([1, 1, 1], [1, 1, 1], '', 80, '#a4a1b8');
     this.patterns.push(pattern);
 
-    pattern = new LayoutPattern('masterA', [1, 2, 3], [16, 120, 120]);
+    pattern = new LayoutPattern('masterA', [1, 2, 4], [16, 120, 120]);
     pattern.AddTile([1, 1, 1], [3, 2, 1], 'slotA', 180, 'transparent');
-    pattern.AddTile([1, 1, 1], [30, 3, 3], 'slotB', 180, 'transparent');
+    pattern.AddTile([1, 1, 2], [30, 3, 3], 'slotB', 180, 'transparent');
     pattern.AddTile([1, 2, 1], [1, 1, 1], 'slotC', 180, 'transparent');
     this.patterns.push(pattern);
   }

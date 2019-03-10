@@ -72,7 +72,7 @@ export class LoginComponent implements OnInit {
       Email: this.EMail,
       Password: this.Password
     }
-    this._http.postContent(reginfo, "https://localhost:44306/api/Auth/LoginUser").subscribe(
+    this._http.postContent(reginfo, "https://localhost:44306/api/Token").subscribe(
       data => { this.saveSuccess(data) },
       err => { this.saveFail(err) });
   }
